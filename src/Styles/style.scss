@@ -91,6 +91,38 @@ $Caluna: 'Caluna', sans-serif;
 
 
 //{ --------------End of Worker,js-----------------}
+// {--------------start of Initialloader.js------}
+
+.main-container{
+  .col-md-12.pt-5.center-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+    .container-fluid {
+      /* Content for the center container */
+  
+      .links {
+        display: flex; // Display links horizontally
+        justify-content: center; // Center-align links horizontally
+        align-items: center; // Center-align links vertically
+  
+        a {
+          text-decoration: none;
+          color: #fff; // Remove text decoration for all links
+          margin: 0; // Reset margin
+          padding: 0; 
+          &:hover {
+            text-decoration: none; // Remove text decoration on hover
+          }
+          margin: 20px; 
+        }
+      }
+    }
+  }
+}
+
+// {--------------End of Initialloader.js---------}
 .Job-main{ 
     font-family: Roboto;
     font-size: 50px;
