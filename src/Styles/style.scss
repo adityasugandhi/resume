@@ -1,6 +1,73 @@
 // YourSCSSFile.scss
+$Roboto: 'Roboto', sans-serif;
+$Caluna: 'Caluna', sans-serif;
+
+/* Font-face declarations for custom fonts */
+@font-face {
+  font-family: #{$Caluna};
+  src: url('./Font-family/calluna-regular.otf') format('opentype');
+  /* Add more font formats (e.g., woff, woff2, ttf) if needed */
+}
+
+@font-face {
+  font-family: #{$Roboto};
+  src: url('./Font-family/Roboto/Roboto-Black.ttf') format('truetype');
+  /* You can specify additional font formats if needed */
+}
+
+/* Styles for your template container */
+.template {
+  border: 1px solid white;
+  backdrop-filter: blur(5px);
+  margin: 50px;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+  color: white;
+}
+  /* Styles for title */
+  .title {
+    font-family: #{$Roboto};
+    font-size: 50px;
+    text-align: left;
+    color: #fff;
+  }
+
+  /* Styles for timeline */
+  .timeline {
+    font-family: #{$Roboto};
+    font-size: 50px;
+    text-align: right;
+    color: #fff;
+  }
+
+  /* Styles for description */
+  .description {
+    font-family: #{$Roboto};
+    font-size: 25px;
+    text-align: right;
+    color: #fff;
+    align-items: left;
+  }
+
+  /* Styles for the hidden content */
+  
+
+  /* Styles for the expanded state */
 
 
+//{ --------------End of Worker,js-----------------}
+.Job-main{ 
+    font-family: Roboto;
+    font-size: 50px;
+    text-align: center;
+    align-items: center;
+}
+.icons{
+  align-items: center;
+  display: 'flex'; 
+  justify-content: center;
+}
 .vanta {
   //background-image: "./background.jpeg";
   min-height: 100vh;
@@ -12,7 +79,6 @@
 }
 
 /* Rest of your SCSS styles */
-
 .content {
   /* Styles for your content */
   position: relative; /* Ensure the content is positioned relative */
@@ -20,58 +86,74 @@
 }
 /* styles.css (or .scss) */
 
-@font-face {
-  font-family: 'Caluna';
-  src: url('./Font-family/calluna-regular.otf') format('opentype');
-  /* Add more font formats (e.g., woff, woff2, ttf) if needed */
-}
-.card-container {
-  flex-wrap: wrap;
-  justify-content: space-between;
-
-  .card {
-    cursor: pointer;
-    align-items: center;
-    width: 200px;
-    padding: 16px;
-    margin: 16px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-
-    &:hover {
-      transform: scale(1.05);
-    }
-  }
-
-  .selected {
-    position: absolute;
-    z-index: 2;
-    display: absolute;
-    align-items: center;
-    justify-content: center;
-    background-color: rgba(255, 255, 255, 0.7); /* Background with blur effect */
-    backdrop-filter: blur(8px); /* Apply blur effect to the background */
-
-    .expanded-card {
-      width: 100%;
-      height: 100%;
-      padding: 16px;
-      margin: 16px;
-      background-color: #fff;
-      border-radius: 8px;
-      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-      z-index: 5;
-      position: fixed;
-      top: 0;
-      left: 0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-  }
-}
-
+  
 /* Your other CSS styles and components can use 'Caluna' as the font-family now */
+.title{
+  font-family: Roboto;
+  font-size: 50px;
+  text-align: left;
+  color: #fff;
+}
+.timeline{
+  font-family: $Roboto;
+  font-size: 50px;
+  text-align: right;
+  color: #fff;
+}
+.description{
+  font-family: $Roboto;
+  font-size: 25px;
+  text-align: right;
+  color: #fff;
+  align-items: left;
+}
+
+.name_main{
+margin: 0 auto;
+font-size: 50px;
+text-align: center;
+align-items: center;
+}
+
+.Work-Experience{
+  margin: 0 auto;
+  font-size: 50px;
+  font-family: Roboto;
+  text-align: center;
+  color: #fff;
+}
+
+
+// Extra small devices (portrait phones, less than 576px)
+// No media query since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 320px) { 
+  .name_main{
+  margin: 0 auto;
+  //font-size: small;
+  } 
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { 
+  .name_main{
+  margin: 0 auto;
+  font-family: Roboto;
+  } 
+}
+// Large devices (desktops, 992px and up)
+@media (min-width: 1024px) { 
+  .name_main{
+  margin: 0 auto;
+  } 
+}
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { 
+    .name_main{
+    margin: 0 auto;
+    } 
+  
+ }
+
 

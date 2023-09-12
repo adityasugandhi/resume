@@ -2,26 +2,26 @@ import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
 import Nav from './Components/Nav';
-import Home from './Pages/home';
+import WorkExp from './Pages/Worker';
+
 import "./Styles/style.scss"
-
-
-// Import Vanta.js properly
 import ExampleApp from './Components/Background';
-//import Initialloader from './Components/Initial_loader';
-import Initialloader from './Components/Initialloader';
+import Home from './Pages/home';
+import Contact from './Pages/contact';
 function App() {
+  console.log.apply(window.location)
   return (
     <BrowserRouter>
       <div className="App">
         <header className="App-header">
           <Nav />
           <Routes>
-            <Route path="Pages/home.js" element={<Home />} />
+            <Route path="/" element={<Home/>} />
+            <Route path="/worker" element={<WorkExp/>} />
+            <Route path="/contact" element={<Contact/>}/>
           </Routes>
         </header>
         <ExampleApp/>
-        <Initialloader/>
       </div>
     </BrowserRouter>
   );

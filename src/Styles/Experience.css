@@ -1,0 +1,35 @@
+/* Experience.css */
+.container {
+    /* Add your styles here */
+    transition: all 0.3s ease-in-out; /* Add transition */
+  }
+  
+  .row {
+    /* Add your styles here */
+    transition: all 0.3s ease-in-out; /* Add transition */
+  }
+  
+  .title {
+    /* Add your styles here */
+    transition: all 0.3s ease-in-out; /* Add transition */
+  }
+  
+  .timeline {
+    /* Add your styles here */
+    transition: all 0.3s ease-in-out; /* Add transition */
+  }
+  
+  .description {
+    /* Add your styles here */
+    transition: all 0.3s ease-in-out; /* Add transition */
+  }
+  
+  .outer-additional {
+    /* Add your styles here */
+    transition: all 0.3s ease-in-out; /* Add transition */
+  }
+  
+  .additional-info {
+    /* Add your styles here */
+    transition: all 0.3s ease-in-out; /* Add transition */
+  }

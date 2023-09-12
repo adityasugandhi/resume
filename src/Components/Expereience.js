@@ -1,24 +1,37 @@
-import React from "react";
-import Button from 'react-bootstrap/Button';
-import Card from 'react-bootstrap/Card';
-
+import React, { useState} from 'react';
+import "../Styles/Experience.css";
 export default function Experience(props) {
-    const { title, company, date, description } = props;
+  const [showMore, setShowMore] = useState(false);
 
-    return (
-        <div className="experience">
-        <Card style={{ width: '20rem'  }}className="mx-auto">
-          <Card.Img variant="top" src="holder.js/100px180" />
-          <Card.Body>
-            <Card.Title className="card-title-18px card-title-color-black">{title}</Card.Title>
-            <Card.Text>
-              {description}
-              {company}
-              {date}
-            </Card.Text>
-            <Button variant="primary">Github</Button>
-          </Card.Body>
-        </Card>
+  const toggleShowMore = () => {
+    setShowMore(!showMore);
+    console.log("toggle_called")
+  };
+
+  return ( 
+    <div id="expanded-collapsed" className={`container template ${showMore ? 'expanded' : ''}`} 
+    
+    onClick={toggleShowMore}>
+      <div className="container">
+        <div className="row">
+          <div className="col-md-8 title">{props.title}</div>
+          <div className="col-md-4 timeline">{props.year}</div>
+        </div>
+        <div className="row">
+          <div className="col-12 description">{props.description}</div>
+        </div>
+        {showMore && (
+          <div className="row outer-additional">
+            <div className="col-12 additional-info">
+              <ul>
+                {props.items && props.items.map((item, index) => (
+                  <li key={index}>{item}</li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        )}
       </div>
-    );
-  }
+    </div>
+  );
+}
