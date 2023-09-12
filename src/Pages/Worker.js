@@ -1,5 +1,6 @@
 import React from "react";
 import Experience from "../Components/Expereience";
+import WorkHistoryIcon from '@mui/icons-material/WorkHistory';
 import "../Styles/style.scss"
 export default function WorkExp() {
   const experienceData= [{
@@ -17,11 +18,11 @@ export default function WorkExp() {
 ];
   return (
     <>
-    <div className="container-fluid">
+    <div className="container-fluid Experience">
         <div className="row">
           <div className="column">
             <div className="col-12">
-              <h1 className="text-center Work-Experience">Work Experience</h1>
+              <h1 className="text-center Work-Experience">Work Experience <WorkHistoryIcon sx={{fontSize:60}}/></h1>
             </div>
           </div>        
         </div>
