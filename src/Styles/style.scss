@@ -14,46 +14,63 @@ $Caluna: 'Caluna', sans-serif;
   src: url('./Font-family/Roboto/Roboto-Black.ttf') format('truetype');
   /* You can specify additional font formats if needed */
 }
+.Education{
+  h1{
+    font-family: $Roboto;
+    font-size: 50px;
+    text-align: center;
+    color: #fff;
+  }
+}
 
-/* Styles for your template container */
+
+
 .template {
   border: 1px solid white;
   backdrop-filter: blur(5px);
-  margin: 50px;
+  margin:50px;
+  margin-left: -10px;
+  margin-right: -10px;
+  
   position: relative;
   z-index: 1;
   cursor: pointer;
   color: white;
-}
+  transition: color 2s ease-in-out;
+
   /* Styles for title */
   .title {
-    font-family: #{$Roboto};
-    font-size: 50px;
+    font-family: $Roboto;
+    font-size: 45px;
     text-align: left;
     color: #fff;
   }
 
   /* Styles for timeline */
   .timeline {
-    font-family: #{$Roboto};
-    font-size: 50px;
+    font-family: $Roboto;
+    font-size: 25px;
     text-align: right;
     color: #fff;
   }
 
   /* Styles for description */
   .description {
-    font-family: #{$Roboto};
+    font-family: $Roboto;
     font-size: 25px;
     text-align: right;
     color: #fff;
     align-items: left;
   }
 
-  /* Styles for the hidden content */
-  
+  &.expanded {
+    color: blue($color: #000000);
+  }
 
-  /* Styles for the expanded state */
+  &:focus {
+    color: brown;
+  }
+}
 
 
 //{ --------------End of Worker,js-----------------}

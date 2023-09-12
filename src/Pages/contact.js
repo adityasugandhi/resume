@@ -1,16 +1,36 @@
 import React from "react";
-import WorkExp from "./Worker";
+import Education from "../Components/Education";
 
 
-
+const educationData=[{
+    university:"Florida State Univerisity, Tallahassee",
+    degree:"Master's of Science in Computer Science",
+    timeline:"Aug 2022- Aug 2024",
+    items:["GPA: 3.8/4.0"],
+    },
+    {
+    university:"SRM Institute of Science and Technology, Vellore",
+    degree:"Bachelor's of Technology in Computer Science",
+    timeline:"Aug 2016- May 2020",
+    items:["GPA: 7/10"],
+    }
+]
 export default function Contact() {
+    
     return (
-        <div className="Contact">
+        <div className="Education">
         <header>
-            <h1>Contact</h1>
-
+            <h1>Education</h1>
         </header>
-        <WorkExp/>
+       {educationData.map((education,index)=>
+       <Education 
+         key={index}
+            university={education.university}
+            degree={education.degree}
+            timeline={education.timeline}
+            items={education.items}
+         />
+         )}        
         </div>
     );
 

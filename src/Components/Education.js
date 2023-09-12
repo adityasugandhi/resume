@@ -1,23 +1,37 @@
-import React from "react";
-import Card from 'react-bootstrap/Card';
-import Button from 'react-bootstrap/Button'
+import React,{useState} from "react";
+import "../Styles/style.scss"
+
 
 export default function Education (props){
+    const [showMore, setShowMore]= useState(false);
+    const toggleShowMore = () =>{
+        setShowMore(!showMore);
+    }
     const {university,degree,timeline} = props;
     return (
-        <div className="Education">
-            <Card style={{ width: '20rem'  }}className="mx-auto">
-                <Card.Img variant="top" src="holder.js/100px180" />
-                <Card.Body>
-                    <Card.Title className="card-title-18px card-title-color-black">{university}</Card.Title>
-                    <Card.Text>
-                        {degree}
-                        {timeline}
-                    </Card.Text>
-                    <Button variant="primary">Github</Button>
-                </Card.Body>
-        </Card>
+        <div className={`container template ${showMore ? 'expanded' : ''}`} onClick={toggleShowMore}>
+            <div className="row">
+                <div className="col-md-8 title">{university}</div>
+                <div className="col-md-4 timeline">{timeline}</div>
+            </div>
+            <div className="row">
+                <div className="col-12 description">{degree}</div>
+            </div>
+            {showMore && (
+                <div className="row">
+                    <div className="col-12">
+                        <ul>
+                            {props.items && props.items.map((item,index) => (
+                                <li key={index}>{item}</li>
+                            ))}
+                        </ul> 
+                    </div>
+                </div>
+            )}
+        </div>
+    
+        
             
-        </div>    
+       
     );
 }

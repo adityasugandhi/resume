@@ -1,6 +1,6 @@
 import React from "react";
 import Experience from "../Components/Expereience";
-
+import "../Styles/style.scss"
 export default function WorkExp() {
   const experienceData= [{
     title: "Software Engineer",
@@ -17,7 +17,7 @@ export default function WorkExp() {
 ];
   return (
     <>
-    <div className="container">
+    <div className="container-fluid">
         <div className="row">
           <div className="column">
             <div className="col-12">
