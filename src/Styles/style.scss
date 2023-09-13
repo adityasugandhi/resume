@@ -1,11 +1,5 @@
 
 
-$Home: '../Components/Nav.js';
-// $Home: 'https://cdn.lordicon.com/kxoxiwrf.json';
-$Computer: 'https://cdn.lordicon.com/qhgmphtg.json';
-$Email: 'https://cdn.lordicon.com/rhvddzym.json';
-$Contact: 'https://cdn.lordicon.com/wxnxiano.json';
-
 // YourSCSSFile.scss
 $Roboto: 'Roboto', sans-serif;
 $Caluna: 'Caluna', sans-serif;
@@ -32,7 +26,7 @@ $Caluna: 'Caluna', sans-serif;
 }
 lord-icon {
   width: 100px;
-  height: 100px;
+  height: 150px;
 }
 
 
@@ -40,11 +34,6 @@ lord-icon {
 //<------------------End of Nav.js----------------------->
 
 /* Your CSS */
-.custom-avatar {
-  width: 250px;
-  height: 250px;
-  /* Other custom styles */
-}
 
 //<------------------Start of Initialloader.js----------------------->
 
@@ -153,42 +142,117 @@ lord-icon {
 //{ --------------End of Worker,js-----------------}
 // {--------------start of Initialloader.js------}
 
-.main-container{
+.main-container {
+  .col-md-6.left-container {
+    .name_main {
+      font-size: 50px;
+      text-align: center;
+      align-items: center;
+      margin: 0 auto;
+      font-family: Roboto;
+
+      @media (max-width: 320px) {
+        font-size: 40px;
+      }
+
+      @media (max-width: 768px) {
+        font-size: 40px;
+      }
+
+      @media (min-width: 1024px) {
+        font-size: 60px;
+      }
+
+      @media (min-width: 1200px) {
+        font-size: 60px;
+      }
+    }
+  }
+
+  .col-md-6.pr-1.right {
+    .Job-main {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      margin: 0 auto;
+      font-family: Roboto;
+      @media (max-width: 320px) {
+        font-size: 40px;
+      }
+
+      @media (max-width: 768px) {
+        font-size: 40px;
+      }
+
+      @media (min-width: 1024px) {
+        font-size: 60px;
+      }
+
+      @media (min-width: 1200px) {
+        font-size: 60px;
+      }
+    }
+    }
+  
+
   .col-md-12.pt-5.center-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-  
+
     .container-fluid {
       /* Content for the center container */
-  
+      
+      .links{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin: 0 auto;
+        font-family: Roboto;
+
+        @media (max-width: 320px) {
+          font-size: 40px;
+        }
+
+        @media (max-width: 768px) {
+          font-size: 40px;
+        }
+
+        @media (min-width: 1024px) {
+          font-size: 45px;
+        }
+
+        @media (min-width: 1200px) {
+          font-size: 50px;
+        }
+      }
+
       .links {
-        display: flex; // Display links horizontally
-        justify-content: center; // Center-align links horizontally
-        align-items: center; // Center-align links vertically
-  
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
         a {
           text-decoration: none;
-          color: #fff; // Remove text decoration for all links
-          margin: 0; // Reset margin
-          padding: 0; 
+          color: #fff;
+          margin: 0;
+          padding: 0;
+
           &:hover {
-            text-decoration: none; // Remove text decoration on hover
+            text-decoration: none;
           }
-          margin: 20px; 
+          margin: 20px;
         }
       }
     }
   }
 }
 
+
 // {--------------End of Initialloader.js---------}
-.Job-main{ 
-    font-family: Roboto;
-    font-size: 50px;
-    text-align: center;
-    align-items: center;
-}
+
 .icons{
   align-items: center;
   display: 'flex'; 
@@ -257,46 +321,32 @@ align-items: center;
 @media (max-width: 320px) { 
   .name_main{
   margin: 0 auto;
-  //font-size: small;
+
+  .h1{
+    font-size: 25px;
   } 
   lord-icon {
     width: 50px;
-    height: 50px;
+    height: 100px;
   }
 
-  
+  }
 }
+
 
 // Medium devices (tablets, 768px and up)
 @media (max-width: 768px) { 
-  .name_main{
-  margin: 0 auto;
-  font-family: Roboto;
-  }
   lord-icon {
     width: 50px;
-    height: 50px;
+    height: 100px;
   }
 }
 // Large devices (desktops, 992px and up)
 @media (min-width: 1024px) { 
-  .name_main{
-  margin: 0 auto;
-    .custom-avatar{
-      width:250px;
-      height: 250px;
-    }
-  }
   
 }
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) { 
-    .name_main{
-    margin: 0 auto;
-    }
-    .h1{
-      color: #fff;
-    } 
   
  }
 

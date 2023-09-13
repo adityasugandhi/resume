@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom';
 import Lottie from 'lottie-web';
 import {defineElement} from 'lord-icon-element';
 //import { Home } from '@mui/icons-material';
-// import "../Styles/style.scss"
+import "../Styles/style.scss"
 defineElement(Lottie.loadAnimation);
 export default function Nav() {
     const Home = 
@@ -28,13 +28,19 @@ export default function Nav() {
             colors="primary:#ffffff,secondary:#ffffff">
             {/* style={{width:"100px",height:"100px"}}> */}
         </lord-icon>
-        const Contact = 
+        const Education = 
             <lord-icon
                 src="https://cdn.lordicon.com/wxnxiano.json"
                 trigger="loop-on-hover"
                 colors="primary:#ffffff,secondary:#ffffff">
                 {/* // style={{width:"100px",height:"100px"}}> */}
             </lord-icon>
+        const Contact = 
+                <lord-icon
+                src="https://cdn.lordicon.com/amxnacxd.json"
+                trigger="loop-on-hover"
+                colors="primary:#ffffff,secondary:#ffffff">
+                </lord-icon>
 
  const openEmailClient = () => {
     window.open('mailto:as22cq@fsu.edu', '_blank');
@@ -45,10 +51,10 @@ export default function Nav() {
        
                 <ul>
                     <Link to='/worker'>{Computer}</Link>        
-                    <Link to='/'>{Home}</Link>    
                     <Link onClick={openEmailClient}>{Email}</Link>
-                    <Link to='/contact'>{Contact}</Link>
-                    <Link to ='/about' >About</Link>
+                    <Link to='/'>{Home}</Link>    
+                    <Link to='/contact'>{Education}</Link>
+                    <Link to ='/about' >{Contact}</Link>
                 </ul>
         </header>
         </div>
