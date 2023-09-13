@@ -1,11 +1,13 @@
 import React from "react";
 import "../Styles/style.scss";
 import "bootstrap/dist/css/bootstrap.css";
+import Lottie from 'lottie-web';
+import {defineElement} from 'lord-icon-element';
 import { Link } from "react-router-dom";
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 //import { fontFamily } from "@mui/system";
 
-
+defineElement(Lottie.loadAnimation);
 const github= <lord-icon
 src="https://cdn.lordicon.com/ochimkct.json"
 trigger="hover"
@@ -13,12 +15,14 @@ colors="primary:#ffffff,secondary:#ffffff"
 style={{ width: '50px', height: '50px' , paddingTop:"15px"}}
 >
 </lord-icon>
-const avatar =  <lord-icon
-                    src="https://cdn.lordicon.com/nobciafz.json"
-                    trigger="loop-on-hover"
-                    colors="primary:#ffffff,secondary:#ffffff"
-                    style={{ width: '250px', height: '250px',textAlign:"center" }}>
+const avatar =  <lord-icon 
+                            className="avatar"
+                            src="https://cdn.lordicon.com/nobciafz.json"
+                            trigger="loop-on-hover"
+                            colors="primary:#ffffff,secondary:#ffffff">
+{/* style={{ width: '250px', height: '250px',textAlign:"center" }}> */}
                 </lord-icon>
+
 const ide =
             <lord-icon
                 src="https://cdn.lordicon.com/anihkfxp.json"

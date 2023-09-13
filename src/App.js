@@ -8,6 +8,7 @@ import "./Styles/style.scss"
 import ExampleApp from './Components/Background';
 import Home from './Pages/home';
 import Contact from './Pages/contact';
+import About from './Pages/about';
 function App() {
   console.log.apply(window.location)
   return (
@@ -19,6 +20,7 @@ function App() {
             <Route path="/" element={<Home/>} />
             <Route path="/worker" element={<WorkExp/>} />
             <Route path="/contact" element={<Contact/>}/>
+            <Route path  ="/about" element={<About/>}/>
           </Routes>
         </header>
         <ExampleApp/>

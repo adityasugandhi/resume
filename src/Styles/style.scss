@@ -1,6 +1,15 @@
+
+
+$Home: '../Components/Nav.js';
+// $Home: 'https://cdn.lordicon.com/kxoxiwrf.json';
+$Computer: 'https://cdn.lordicon.com/qhgmphtg.json';
+$Email: 'https://cdn.lordicon.com/rhvddzym.json';
+$Contact: 'https://cdn.lordicon.com/wxnxiano.json';
+
 // YourSCSSFile.scss
 $Roboto: 'Roboto', sans-serif;
 $Caluna: 'Caluna', sans-serif;
+
 
 /* Font-face declarations for custom fonts */
 @font-face {
@@ -14,7 +23,58 @@ $Caluna: 'Caluna', sans-serif;
   src: url('./Font-family/Roboto/Roboto-Black.ttf') format('truetype');
   /* You can specify additional font formats if needed */
 }
+// <------------------Start of Nav.js----------------------->
 
+.Nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+lord-icon {
+  width: 100px;
+  height: 100px;
+}
+
+
+
+//<------------------End of Nav.js----------------------->
+
+/* Your CSS */
+.custom-avatar {
+  width: 250px;
+  height: 250px;
+  /* Other custom styles */
+}
+
+//<------------------Start of Initialloader.js----------------------->
+
+
+//<------------------End of Inittialloader.js----------------------->
+
+.skill-container {
+  border: solid 2px white;
+  color: #fff;
+
+  /* Add a transition for max-height */
+  max-height: 100px;
+  transition: max-height 0.3s ease-in-out;
+
+  h1 {
+    color: #fff;
+  }
+}
+
+.expanded {
+  /* Set max-height to a large value when expanded */
+  max-height: 1000px;
+}
+
+.row.expanded-content {
+  color: aquamarine;
+  /* Optionally, add styles for the expanded content */
+  /* You can control the appearance of the expanded content here */
+  /* For example, you can set opacity, display, or other properties */
+}
 
 .Education{
   h1{
@@ -194,30 +254,48 @@ align-items: center;
 // No media query since this is the default in Bootstrap
 
 // Small devices (landscape phones, 576px and up)
-@media (min-width: 320px) { 
+@media (max-width: 320px) { 
   .name_main{
   margin: 0 auto;
   //font-size: small;
   } 
+  lord-icon {
+    width: 50px;
+    height: 50px;
+  }
+
+  
 }
 
 // Medium devices (tablets, 768px and up)
-@media (min-width: 768px) { 
+@media (max-width: 768px) { 
   .name_main{
   margin: 0 auto;
   font-family: Roboto;
-  } 
+  }
+  lord-icon {
+    width: 50px;
+    height: 50px;
+  }
 }
 // Large devices (desktops, 992px and up)
 @media (min-width: 1024px) { 
   .name_main{
   margin: 0 auto;
-  } 
+    .custom-avatar{
+      width:250px;
+      height: 250px;
+    }
+  }
+  
 }
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) { 
     .name_main{
     margin: 0 auto;
+    }
+    .h1{
+      color: #fff;
     } 
   
  }

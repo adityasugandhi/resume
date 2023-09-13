@@ -13,6 +13,8 @@
     "@testing-library/user-event": "^13.5.0",
     "bootstrap": "^5.3.1",
     "framer-motion": "^10.16.4",
+    "lord-icon-element": "^4.1.1",
+    "lottie-web": "^5.12.2",
     "react": "^18.2.0",
     "react-bootstrap": "^2.8.0",
     "react-dom": "^18.2.0",
@@ -52,6 +54,7 @@
     "node-sass": "^7.0.3",
     "postcss-loader": "^7.3.3",
     "resolve-url-loader": "^5.0.0",
-    "sass-loader": "^13.3.2"
+    "sass-loader": "^13.3.2",
+    "webpack": "^5.88.2"
   }
 }
