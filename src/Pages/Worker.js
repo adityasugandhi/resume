@@ -4,7 +4,7 @@ import WorkHistoryIcon from '@mui/icons-material/WorkHistory';
 import "../Styles/style.scss"
 export default function WorkExp() {
   const experienceData= [{
-    title: "Software Engineer",
+    title: "Research ",
     year: "2019 - Present",
     description: "I am currently working as a Software Engineer at a company called Aspire Systems",
     items: ["Item 1 for Software Engineer", "Item 2 for Software Engineer"]
@@ -18,7 +18,7 @@ export default function WorkExp() {
 ];
   return (
     <>
-    <div className="container-fluid Experience">
+    <div className="container Experience">
         <div className="row">
           <div className="column">
             <div className="col-12">

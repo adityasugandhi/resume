@@ -1,6 +1,5 @@
 import React from "react";
 import styled from 'styled-components';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 
 
@@ -28,7 +27,7 @@ const Icons = styled.div`
   }
 `;
 
-const Githubicon = styled.div`
+const Linkedinicon = styled.div`
 display: flex;
 justify-content: center;
 align-items: center;
@@ -69,13 +68,13 @@ lord-icon{
 
 
 export const github = (
-  <Githubicon>
+  <Linkedinicon>
     <lord-icon
       src="https://cdn.lordicon.com/ochimkct.json"
       trigger="hover"
       colors="primary:#ffffff,secondary:#ffffff"
     ></lord-icon>
-  </Githubicon>
+  </Linkedinicon>
 );
 
 export const ide = (
@@ -99,9 +98,8 @@ export const avatar = (
   </Icons>
 );
 
-export const LinkedIn = <LinkedInIcon className="Linkedin-Icon" />;
 
-export const Giticon =
-<Githubicon>
-<img className="Linkedin-Icon" src="https://img.icons8.com/glyph-neue/128/FFFFFF/linkedin.png"/>
-</Githubicon>
+export const LinkedIn =
+<Linkedinicon>
+<img className="Linkedin-Icon" src="https://img.icons8.com/glyph-neue/128/FFFFFF/linkedin.png" alt=''/>
+</Linkedinicon>

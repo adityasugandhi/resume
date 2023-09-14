@@ -1,10 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-import Lottie from 'lottie-web';
-import {defineElement} from 'lord-icon-element';
 //import { Home } from '@mui/icons-material';
 import "../Styles/style.scss"
-defineElement(Lottie.loadAnimation);
 export default function Nav() {
     const Home = 
         <lord-icon

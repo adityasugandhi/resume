@@ -1,7 +1,7 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.css";
 import { Link } from "react-router-dom";
-import {github,ide,LinkedIn,avatar,Giticon} from './icon'
+import {github,ide,LinkedIn,avatar} from './icon'
 // Define the custom element 'avatar' using defineElement
 
 
@@ -33,7 +33,7 @@ export default function InitialLoader() {
            
                     <div className="links">
                       <Link to="https://github.com/adityasugandhi">{github} </Link> 
-                      <Link to="https://www.linkedin.com/in/sugandhiaditya"> {Giticon}</Link>
+                      <Link to="https://www.linkedin.com/in/sugandhiaditya"> {LinkedIn}</Link>
                     </div>
                     </div>
                 </div> 

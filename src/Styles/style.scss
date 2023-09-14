@@ -91,52 +91,6 @@ lord-icon {
 
 
 
-.template {
-  border: 1px solid white;
-  backdrop-filter: blur(5px);
-  margin:50px;
-  margin-left: -10px;
-  margin-right: -10px;
-  
-  position: relative;
-  z-index: 1;
-  cursor: pointer;
-  color: white;
-  transition: color 2s ease-in-out;
-
-  /* Styles for title */
-  .title {
-    font-family: $Roboto;
-    font-size: 45px;
-    text-align: left;
-    color: #fff;
-  }
-
-  /* Styles for timeline */
-  .timeline {
-    font-family: $Roboto;
-    font-size: 25px;
-    text-align: right;
-    color: #fff;
-  }
-
-  /* Styles for description */
-  .description {
-    font-family: $Roboto;
-    font-size: 25px;
-    text-align: right;
-    color: #fff;
-    align-items: left;
-  }
-
-  &.expanded {
-    color: blue($color: #000000);
-  }
-
-  &:focus {
-    color: brown;
-  }
-}
 
 
 //{ --------------End of Worker,js-----------------}
@@ -274,64 +228,79 @@ lord-icon {
   position: relative; /* Ensure the content is positioned relative */
   z-index: 1; /* Place the content on top of the background */
 }
-/* styles.css (or .scss) */
-
+// {---------------------Start of Experience.js--------------------- }
+.container.template {
+  border: solid 1px whitesmoke;
+  transition: all 2s;
+  backdrop-filter: blur(5px);
+  justify-content: center;
+  margin-top: 50px;
   
-/* Your other CSS styles and components can use 'Caluna' as the font-family now */
-.title{
-  font-family: Roboto;
-  font-size: 50px;
-  text-align: left;
-  color: #fff;
+  
+  .container {
+    .row {
+      .title {
+        font-size: 50px;
+        font-family: $Roboto;
+        color: #fff;
+        justify-content: flex-start;
+        @media (max-width: 320px) {
+          font-size: 30px;
+        }
+
+        @media (max-width: 768px) {
+          font-size: 30px;
+        }
+
+        @media (min-width: 1024px) {
+          font-size: 40px;
+        }
+
+        @media (min-width: 1200px) {
+          font-size: 50px;
+        }
+        
+      }
+      
+      .timeline {
+        font-size: 25px;
+        font-family: $Roboto;
+        color: #fff;
+      }
+    }
+    
+    .row {
+      .col-12.description {
+        font-size: 30px;
+        font-family: $Roboto;
+        color: #fff;
+      }
+    }
+  }
+  
 }
-.timeline{
-  font-family: $Roboto;
-  font-size: 50px;
-  text-align: right;
-  color: #fff;
-}
-.description{
-  font-family: $Roboto;
-  font-size: 25px;
-  text-align: right;
-  color: #fff;
-  align-items: left;
+.container.template.expanded{
+  color:whitesmoke
 }
 
-.name_main{
-margin: 0 auto;
-font-size: 50px;
-text-align: center;
-align-items: center;
-}
 
-.Work-Experience{
-  margin: 0 auto;
-  font-size: 50px;
-  font-family: Roboto;
-  text-align: center;
-  color: #fff;
-}
+      
+    
+  
 
 
-// Extra small devices (portrait phones, less than 576px)
-// No media query since this is the default in Bootstrap
+// {---------------------End of Experience.js--------------------- }
 
-// Small devices (landscape phones, 576px and up)
+
 @media (max-width: 320px) { 
-  .name_main{
-  margin: 0 auto;
-
-  .h1{
-    font-size: 25px;
-  } 
+   
   lord-icon {
     width: 50px;
     height: 100px;
   }
 
   }
-}
+
 
 
 // Medium devices (tablets, 768px and up)
