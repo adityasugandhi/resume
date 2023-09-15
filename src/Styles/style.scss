@@ -1,21 +1,41 @@
-
-
-// YourSCSSFile.scss
+/* Font-face declarations for custom fonts */
 $Roboto: 'Roboto', sans-serif;
 $Caluna: 'Caluna', sans-serif;
-
-
+$Robotoitalic: 'Robotoitalic', sans-serif; // Make sure to specify a fallback font
+$Robotslabreg:'Robotoslabregular';
+$Robotslabsemibold:'Robotslabsemibold';
 /* Font-face declarations for custom fonts */
 @font-face {
-  font-family: #{$Caluna};
+  font-family: $Caluna;
   src: url('./Font-family/calluna-regular.otf') format('opentype');
   /* Add more font formats (e.g., woff, woff2, ttf) if needed */
 }
 
 @font-face {
-  font-family: #{$Roboto};
+  font-family: $Roboto;
   src: url('./Font-family/Roboto/Roboto-Black.ttf') format('truetype');
   /* You can specify additional font formats if needed */
+}
+
+@font-face {
+  font-family: 'Robotoitalic';
+  src: url('./Font-family/Roboto/Roboto-BoldItalic.ttf') format('truetype');
+  /* You can specify additional font formats if needed */
+}
+
+@font-face {
+  font-family: 'Robotslabregular';
+  src: url(./Font-family/Roboto_Slab/static/RobotoSlab-Regular.ttf)format('opentype');
+}
+
+@font-face {
+  font-family:'Robotslabsemibold' ;
+  src: url(./Font-family/Roboto_Slab/static/RobotoSlab-SemiBold.ttf)format('opentype');
+}
+
+.App-header{
+  margin-bottom:100px;
+
 }
 // <------------------Start of Nav.js----------------------->
 
@@ -35,10 +55,6 @@ lord-icon {
 
 /* Your CSS */
 
-//<------------------Start of Initialloader.js----------------------->
-
-
-//<------------------End of Inittialloader.js----------------------->
 
 .skill-container {
   border: solid 2px white;
@@ -229,27 +245,57 @@ lord-icon {
   z-index: 1; /* Place the content on top of the background */
 }
 // {---------------------Start of Experience.js--------------------- }
+
+.WorkHicon{
+  font-size: 50px;
+  height: 50px;
+  width: 50px;
+}
+
 .container.template {
-  border: solid 1px whitesmoke;
   transition: all 2s;
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(8px);
   justify-content: center;
   margin-top: 50px;
+  @media (max-width: 320px) {
+    
+    
+  }
+
+  @media (max-width: 768px) {
+  
+    
+  }
+
+  @media (min-width: 1024px) {
+    border: solid 1px whitesmoke;
+  
+  }
+
+  @media (min-width: 1200px) {
+    border: solid 1px whitesmoke;
+  
+    
+  }
+
   
   
   .container {
-    .row {
+    .row {   
       .title {
+        
         font-size: 50px;
-        font-family: $Roboto;
+        text-align: left;
+        font-family: $Robotslabreg;
         color: #fff;
         justify-content: flex-start;
         @media (max-width: 320px) {
-          font-size: 30px;
+          font-size: 25px;
+          
         }
 
         @media (max-width: 768px) {
-          font-size: 30px;
+          font-size: 25px;
         }
 
         @media (min-width: 1024px) {
@@ -257,7 +303,7 @@ lord-icon {
         }
 
         @media (min-width: 1200px) {
-          font-size: 50px;
+          font-size: 40px;
         }
         
       }
@@ -266,22 +312,91 @@ lord-icon {
         font-size: 25px;
         font-family: $Roboto;
         color: #fff;
+        padding-top: 10px;
+        text-align: right;
+
+        @media (max-width: 320px) {
+          font-size: 25px;
+        }
+
+        @media (max-width: 768px) {
+          font-size: 15px;
+        }
+
+        @media (min-width: 1024px) {
+          font-size: 40px;
+        }
+
+        @media (min-width: 1200px) {
+          font-size: 40px;
+        }
       }
+      
     }
     
     .row {
-      .col-12.description {
-        font-size: 30px;
+      .col-4.company{
+        font-size: 20px;
+        font-family: $Robotoitalic;
+        color: whitesmoke;
+        text-align: left;
+      }
+      .col-8.description {
+        font-size: 20px;
         font-family: $Roboto;
         color: #fff;
+        text-align: right;
+      }
+    }
+    
+  }
+  
+ 
+}
+.showmore{
+  height: 0;
+  overflow: hidden;
+  color: white;
+  transition: all 0.5s ease-in-out;
+  .col-12{
+    padding-top: 30px;
+    ul{
+      list-style-type: none ;
+      text-align: right;
+      li{
+          list-style-type: none;
+          margin-bottom:10px;
+          opacity: 0;
+          
       }
     }
   }
-  
 }
-.container.template.expanded{
-  color:whitesmoke
+/* Add this CSS rule to your SCSS */
+.container.template.expanded {
+  list-style: none;
+  transition: all 2s ease-in-out; 
+  color:black;
+  .container {
+    .row {
+      .col-12 {
+        padding-top: 20px;
+        ul {
+          list-style-type: none;
+          li {
+            opacity: 1;
+            transition:  all 1s ease-in-out;
+            color:whitesmoke;
+            margin-bottom:10px;
+            list-style-type: none;
+            
+          }
+        }
+      }
+    }
+  }
 }
+
 
 
       
@@ -290,6 +405,105 @@ lord-icon {
 
 
 // {---------------------End of Experience.js--------------------- }
+
+// {---------------------Start of Education.js--------------------- }
+#school-icon{
+  height: 100px;
+  width: 100px;
+  @media (min-width: 320px) and (max-width: 720px) {
+    height: 50px;
+    width: 50px;
+  }
+  
+}
+
+.container.education {
+  backdrop-filter: blur(6px);
+  margin-top: 100px;
+  margin-bottom: 100px;
+  max-width: 1200px;
+
+  @media (min-width: 720px) and (max-width: 8000px) {
+    border: solid 1px whitesmoke;
+  }
+
+  .row {
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+
+  .col-1{
+    .university-logo {
+    height: 200px;
+    width: 200px;
+    padding:10px;
+    @media (min-width: 320px) and (max-width: 720px){
+      height:55px ;
+      width: 55px;
+      
+    }
+  }
+}
+
+  .col-7.title {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: x-large;
+    font-family: $Robotslabsemibold;
+    color: white;
+    justify-content: center;
+    padding-left: 110px;
+    padding-top: 80px;
+    .links {
+      text-decoration: none;
+      color: #fff;
+      
+    }
+
+    @media (min-width: 320px) and (max-width: 720px) {
+      font-size: x-small;
+      font-family:$Robotslabsemibold;
+      text-align: center;
+      padding-left: 40px;
+      padding-top: 10px;
+    }
+    
+  }
+
+  .col-4.timeline {
+    font-size: x-large;
+    color: white;
+    padding-top: 30px;
+    font-family: $Robotslabsemibold;
+    text-align: center;
+    padding-top: 80px;
+
+    @media (min-width: 320px) and (max-width: 720px) {
+      font-size: xx-small;
+      padding-top: 20px;
+      text-align: center;
+      
+      font-family: $Robotslabsemibold;
+    }
+    
+  }
+
+  .col-12.description {
+    font-size: x-large;
+    font-family: $Robotoitalic;
+    color: #fff;
+    text-align: right;
+
+    @media (min-width: 320px) and (max-width: 720px) {
+      font-size: small;
+    }
+  }
+}
+
+
+// {---------------------End of Education.js--------------------- }
+
+
 
 
 @media (max-width: 320px) { 

@@ -7,12 +7,19 @@ export default function Education (props){
     const toggleShowMore = () =>{
         setShowMore(!showMore);
     }
-    const {university,degree,timeline} = props;
+    const {university,degree,timeline,logo,link} = props;
     return (
-        <div className={`container template ${showMore ? 'expanded' : ''}`} onClick={toggleShowMore}>
+        <div className={`container education ${showMore ? 'expanded' : ''}`} onClick={toggleShowMore}>
             <div className="row">
-                <div className="col-md-8 title">{university}</div>
-                <div className="col-md-4 timeline">{timeline}</div>
+                <div className="col-1"> {/* This col-1 is for the logo */}
+                    {logo && <img src={logo} alt="" className="university-logo" />}
+                </div>
+                <div className="col-7 title">
+                    <a href={link} className="links">
+                        {university}
+                    </a>
+                </div>
+            <div className="col-4 timeline">{timeline}</div>
             </div>
             <div className="row">
                 <div className="col-12 description">{degree}</div>

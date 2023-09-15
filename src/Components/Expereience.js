@@ -3,8 +3,12 @@ export default function Experience(props) {
   const [showMore, setShowMore] = useState(false);
 
   const toggleShowMore = () => {
+    if(showMore){
+      document.getElementById(`showmore`+props.idx).style.height = '0';
+    }else{
+      document.getElementById(`showmore`+props.idx).style.height = '100px';
+    }
     setShowMore(!showMore);
-    console.log("toggle_called")
   };
 
   return ( 
@@ -15,20 +19,22 @@ export default function Experience(props) {
           <div className="col-md-4 timeline">{props.year}</div>
         </div>
         <div className="row">
-          <div className="col-12 description">{props.description}</div>
+          <div className='col-4 company'>{props.company}</div>
+          <div className="col-8 description">{props.description}</div>
         </div>
-        {showMore && (
-          <div className="row ">
+        
+          <div className="row showmore" id={`showmore`+props.idx}>
             <div className="col-12">
-              <ul>
+              <ul style={{ listStyle:'none'}}>
                 {props.items && props.items.map((item, index) => (
                   <li key={index}>{item}</li>
                 ))}
               </ul>
             </div>
           </div>
-        )}
+        
       </div>
+      
     </div>
   );
 }

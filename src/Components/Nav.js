@@ -50,7 +50,7 @@ export default function Nav() {
                     <Link to='/worker'>{Computer}</Link>        
                     <Link onClick={openEmailClient}>{Email}</Link>
                     <Link to='/'>{Home}</Link>    
-                    <Link to='/contact'>{Education}</Link>
+                    <Link to='/Education'>{Education}</Link>
                     <Link to ='/about' >{Contact}</Link>
                 </ul>
         </header>
