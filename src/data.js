@@ -20,14 +20,16 @@ export const educationData=[{
 ]
 export const experienceData= [{
     title: "Research Assistant ",
-    year: "Jan 2023 - April 2023",
-    company:"Department of Scientific Computing, Tallahassee, U.S.A",
+    year: "Jan 2023 - April 2024",
+    links: "https://www.sc.fsu.edu/",
+    company:"Department of Scientific Computing,FSU Tallahassee, U.S.A,",
     description: "",
     items: [""]
   },
   {
     title: "Software Engineer",
     year: " Oct 2020 - Aug 2022",
+    links:"https://www.aspiresys.com/",
     company:"Aspire Sytems Chennai, India",
     description: "",
     items: [""]
@@ -35,6 +37,7 @@ export const experienceData= [{
   {
     title:"Software Engineer-Intern",
     year:'Dec 2019 – July 2020',
+    links:"https://www.impetus.com/",
     company: "Impetus Indore, India",
     description:"",
     items:[""]

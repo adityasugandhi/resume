@@ -41,7 +41,7 @@ const toggleShowMore = () => {
           <div className="col-md-4 timeline">{props.year}</div>
         </div>
         <div className="row">
-          <div className='col-4 company'>{props.company}</div>
+          <div className='col-4 company'><a href={props.links} className="links">{props.company}</a></div>
           <div className="col-8 description">{props.description}</div>
         </div>
         

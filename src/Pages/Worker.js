@@ -60,6 +60,7 @@ export default function WorkExp() {
           key={index}
           title={experience.title}
           year={experience.year}
+          links={experience.links}
           company={experience.company}
           description={experience.description}
           items={experience.items}

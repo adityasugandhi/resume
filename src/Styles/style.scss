@@ -257,6 +257,8 @@ lord-icon {
   backdrop-filter: blur(8px);
   justify-content: center;
   margin-top: 50px;
+  margin-bottom: 50px;
+  max-height: max-content;
   @media (max-width: 320px) {
     
     
@@ -340,6 +342,11 @@ lord-icon {
         font-family: $Robotoitalic;
         color: whitesmoke;
         text-align: left;
+        .links{
+          text-decoration: none;
+          color: whitesmoke;
+          
+        }
       }
       .col-8.description {
         font-size: 20px;
