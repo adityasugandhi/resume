@@ -286,7 +286,7 @@ lord-icon {
         
         font-size: 50px;
         text-align: left;
-        font-family: $Robotslabreg;
+        font-family: $Robotslabsemibold;
         color: #fff;
         justify-content: flex-start;
         @media (max-width: 320px) {
@@ -309,14 +309,14 @@ lord-icon {
       }
       
       .timeline {
-        font-size: 25px;
-        font-family: $Roboto;
+        font-size: 10px;
+        font-family: $Robotslabreg;
         color: #fff;
         padding-top: 10px;
-        text-align: right;
+        text-align: center;
 
         @media (max-width: 320px) {
-          font-size: 25px;
+          font-size: 15px;
         }
 
         @media (max-width: 768px) {
@@ -324,11 +324,11 @@ lord-icon {
         }
 
         @media (min-width: 1024px) {
-          font-size: 40px;
+          font-size: 25px;
         }
 
         @media (min-width: 1200px) {
-          font-size: 40px;
+          font-size: 25px;
         }
       }
       

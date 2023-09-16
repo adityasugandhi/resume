@@ -3,7 +3,7 @@ import Experience from "../Components/Expereience";
 import WorkHistoryIcon from '@mui/icons-material/WorkHistory';
 import "../Styles/style.scss"
 import styled from 'styled-components';
-
+import {experienceData}from '../data';
 
 export const Workcon = styled.div
 `
@@ -39,21 +39,6 @@ export const Workcon = styled.div
 
 
 export default function WorkExp() {
-  const experienceData= [{
-    title: "Research Assistant ",
-    year: "2019 - Present",
-    company:"Department of Scientific Computing",
-    description: "I am currently working as a Software Engineer at a company called Aspire Systems",
-    items: ["Item 1 for Software Engineer", "Item 2 for Software Engineer"]
-  },
-  {
-    title: "Software Engineer-Intern",
-    year: "2019 - Present",
-    company:"Aspire Sytems",
-    description: "I am currently working as a Software Engineer at a company called Aspire Systems",
-    items: ["Item 1 for Software Engineer", "Item 2 for Software Engineer"]
-  }
-];
   return (
     <>
     <div className="container Experience">

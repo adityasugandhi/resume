@@ -27,7 +27,7 @@ const toggleShowMore = () => {
   if(showMore){
     document.getElementById(`showmore`+props.idx).style.height = '0';
   }else{
-    document.getElementById(`showmore`+props.idx).style.height = '100px';
+    document.getElementById(`showmore`+props.idx).style.height = '10px';
   }
   setShowMore(!showMore);
 };
