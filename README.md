@@ -22,7 +22,7 @@ https://github.com/adityasugandhi/resume.git
 # Change to the project directory:
 
 ```bash
-cd your-project
+cd resume
 ```
 
 # Install project dependencies:
@@ -36,6 +36,10 @@ This will install all the project dependencies listed in the `package.json` file
 # Usage
 
 Describe how to use your project or run it locally.
+```bash
+npm run
+```
+To run the project and host it on your local server
 
 ## Contributing
 
