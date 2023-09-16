@@ -1,17 +1,39 @@
 import React, { useState} from 'react';
+import {Containerfadein} from '../Styles/fadein'
+import styled, { keyframes } from 'styled-components';
+
+export const fadeIn = keyframes`
+from {
+  opacity: 0;
+}
+to {
+  opacity: 1;
+}
+`;
+export const Container = styled.div`
+  opacity: 0;
+  animation: ${fadeIn} 1s ease-in-out forwards; /* Adjust the duration as needed */
+
+`;
+
+
+
 export default function Experience(props) {
+
+
   const [showMore, setShowMore] = useState(false);
 
-  const toggleShowMore = () => {
-    if(showMore){
-      document.getElementById(`showmore`+props.idx).style.height = '0';
-    }else{
-      document.getElementById(`showmore`+props.idx).style.height = '100px';
-    }
-    setShowMore(!showMore);
-  };
+const toggleShowMore = () => {
+  if(showMore){
+    document.getElementById(`showmore`+props.idx).style.height = '0';
+  }else{
+    document.getElementById(`showmore`+props.idx).style.height = '100px';
+  }
+  setShowMore(!showMore);
+};
 
   return ( 
+    <Containerfadein>
     <div className={`container template ${showMore ? 'expanded' : ''}`} onClick={toggleShowMore}>
       <div className="container">
         <div className="row">
@@ -36,5 +58,6 @@ export default function Experience(props) {
       </div>
       
     </div>
+    </Containerfadein>
   );
 }

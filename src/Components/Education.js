@@ -1,14 +1,19 @@
 import React,{useState} from "react";
 import "../Styles/style.scss"
+import { Containerfadein } from "../Styles/fadein";
 
 
 export default function Education (props){
+
+
+
     const [showMore, setShowMore]= useState(false);
     const toggleShowMore = () =>{
         setShowMore(!showMore);
     }
     const {university,degree,timeline,logo,link} = props;
     return (
+        <Containerfadein>
         <div className={`container education ${showMore ? 'expanded' : ''}`} onClick={toggleShowMore}>
             <div className="row">
                 <div className="col-1"> {/* This col-1 is for the logo */}
@@ -36,7 +41,7 @@ export default function Education (props){
                 </div>
             )}
         </div>
-    
+    </Containerfadein>
         
             
        

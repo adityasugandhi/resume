@@ -503,8 +503,44 @@ lord-icon {
 
 // {---------------------End of Education.js--------------------- }
 
+//{---------------------Start of about.js--------------------- }
 
 
+.About-header{
+  color:#fff;
+  font-family: $Robotslabreg;
+}
+.container.skill-container{
+  width: 80%; /* Set the width to 80% of the parent container */
+  color:white;
+  justify-content: center;
+  backdrop-filter: blur(8px);
+  
+  border: none;
+  
+  .backdrop-filter-wrapper {
+    backdrop-filter: blur(8px); /* Standard syntax */
+    height: max-content;
+    display: flex;
+    padding: 40px;
+    border: solid 2px whitesmoke;
+  
+  .col-6{
+    height: max-content;
+    
+    .user-image{
+      border-radius: 50%;
+      height:500px;
+      width: 500px;
+      border: solid 5px whitesmoke;
+    }    
+  }
+}
+}
+
+
+
+//{---------------------End of about.js--------------------- }
 
 @media (max-width: 320px) { 
    

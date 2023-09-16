@@ -1,31 +1,19 @@
 // Cardtemplate.js
-import React, { useState } from "react";
-
-export default function Projects() {
-  const [showMore, setShowMore] = useState(false);
-
-  const toggleShowMore = () => {
-    setShowMore(!showMore);
-  };
-
+import React from "react";
+import { Containerfadein } from "../Styles/fadein";
+export default function Projects(props) {
   return (
-    <div
-      className={`container skill-container ${showMore ? "expanded" : ""}`}
-      onClick={toggleShowMore}>
-    
-      <br />
-      <div className={`row ${showMore ? "expanded-content" : ""}`}>
-        <div className="col-md-6">
-          <p>Testing</p>
+    <Containerfadein>
+    <div className='container skill-container'>
+      <div className="backdrop-filter-wrapper">
+        <div className="col-6">
+          <img src ={props.userimage} alt='' className="user-image"></img>
         </div>
-        {showMore && (
-          <div className="row">
-            <div className="col-md-6 col-sm-12 Additional-Info">
-              <h2>Additional info</h2>
-            </div>
-          </div>
-        )}
-      </div>
+        <div className="col-6">
+          <h1> {props.username}</h1>
+        </div>
+      </div>  
     </div>
-  );
+    </Containerfadein>
+  )
 }

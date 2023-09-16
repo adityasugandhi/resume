@@ -3,7 +3,7 @@ import Education from "../Components/Education";
 import SchoolIcon from '@mui/icons-material/School';
 import fsu from '../Styles/logos/FSU_logo.png';
 import srm from '../Styles/logos/Srmseal.png'
-import Workcon from '../Pages/Worker';
+
 const educationData=[{
     university:"Florida State Univerisity, Tallahassee",
     degree:"Master's of Science in Computer Science",

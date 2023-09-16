@@ -2,12 +2,14 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.css";
 import { Link } from "react-router-dom";
 import {github,ide,LinkedIn,avatar} from './icon'
+import { Containerfadein } from "../Styles/fadein";
 // Define the custom element 'avatar' using defineElement
 
 
 
 export default function InitialLoader() {
   return (
+    <Containerfadein>
     <div className="container main-container pl-1 d-flex justify-content-center align-items-center" style={{ minHeight: "90vh" }}>
         <div className="container description">
             <div className="row">
@@ -40,5 +42,6 @@ export default function InitialLoader() {
             </div>
         </div>
     </div>
+    </Containerfadein>
   );
 }

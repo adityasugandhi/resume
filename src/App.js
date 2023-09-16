@@ -7,7 +7,7 @@ import WorkExp from './Pages/Worker';
 import "./Styles/style.scss"
 import ExampleApp from './Components/Background';
 import Home from './Pages/home';
-import Education from './Pages/Education';
+import Education from './Pages/education';
 import About from './Pages/about';
 function App() {
   console.log.apply(window.location)
@@ -19,7 +19,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home/>} />
             <Route path="/worker" element={<WorkExp/>} />
-            <Route path="/Education" element={<Education/>}/>
+            <Route path="/education" element={<Education/>}/>
             <Route path  ="/about" element={<About/>}/>
           </Routes>
         </header>

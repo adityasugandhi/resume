@@ -7,10 +7,12 @@ export default function About() {
     return (
         <div className="About">
         <header className="About-header">
-            <h1>About</h1>
+            <h1>About me</h1>
         </header>
-        <Projects/>
-        
+        <Projects
+        userimage = "https://media.licdn.com/dms/image/D5603AQGASqEK8CGj6w/profile-displayphoto-shrink_800_800/0/1689253003493?e=1700092800&v=beta&t=3qRyRa8gdMnaCJOOoulDjnS9h7vSeAzPxIHkIHSU62c"
+        username = "Aditya Sugandhi"
+        />
         </div>
         );
     
