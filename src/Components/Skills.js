@@ -10,7 +10,7 @@ export default function Projects(props) {
           <img src ={props.userimage} alt='' className="user-image"></img>
         </div>
         <div className="col-6">
-          <h1> {props.username}</h1>
+           {props.username}
         </div>
       </div>  
     </div>

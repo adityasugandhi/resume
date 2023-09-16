@@ -3,7 +3,7 @@ import Experience from "../Components/Expereience";
 import WorkHistoryIcon from '@mui/icons-material/WorkHistory';
 import "../Styles/style.scss"
 import styled from 'styled-components';
-import {experienceData}from '../data';
+import {experienceData,parttimeData}from '../data';
 
 export const Workcon = styled.div
 `
@@ -65,7 +65,27 @@ export default function WorkExp() {
           description={experience.description}
           items={experience.items}
         />
+       
       ))}
+        <div><img  className="partime-icon" src="https://img.icons8.com/external-flaticons-flat-flat-icons/64/000000/external-part-time-university-flaticons-flat-flat-icons-2.png" alt="external-part-time-university-flaticons-flat-flat-icons-2"/>
+        {parttimeData.map((experience, index) => (
+          <Experience
+            idx={index}
+            key={index}
+            title={experience.title}
+            year={experience.year}
+            links={experience.links}
+            company={experience.company}
+            description={experience.description}
+            items={experience.items}
+          />
+        
+        ))}
+        
+        </div>
+
+
+    
       
       </>
   );

@@ -41,10 +41,11 @@ const toggleShowMore = () => {
           <div className="col-md-4 timeline">{props.year}</div>
         </div>
         <div className="row">
-          <div className='col-4 company'><a href={props.links} className="links">{props.company}</a></div>
-          <div className="col-8 description">{props.description}</div>
+          <div className='col-12 company'><a href={props.links} className="links" style={{textDecoration:'none',color:'whitesmoke'}}>{props.company}</a></div>  
         </div>
-        
+        <div className='row'>
+        <div className="col-12 description">{props.description}</div>
+        </div>
           <div className="row showmore" id={`showmore`+props.idx}>
             <div className="col-12">
               <ul style={{ listStyle:'none'}}>

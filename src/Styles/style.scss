@@ -59,6 +59,7 @@ lord-icon {
 .skill-container {
   border: solid 2px white;
   color: #fff;
+  backdrop-filter: blur(8px);
 
   /* Add a transition for max-height */
   max-height: 100px;
@@ -103,7 +104,22 @@ lord-icon {
   WorkIcon{
     font-size: 50px;
   }
+  
 }
+.container.parttime{
+  margin: 0px;
+  .partime-icon{
+    height: 100px;
+    width: 100px;
+  @media (min-width: 320px) and (max-width: 720px){
+    height:64px;
+    width:64px
+  }
+  }
+
+}
+
+
 
 
 
@@ -254,18 +270,25 @@ lord-icon {
 
 .container.template {
   transition: all 2s;
+  background: rgba(255, 255, 255, 0.2);
+  
+  -webkit-backdrop-filter: blur(8px);
   backdrop-filter: blur(8px);
   justify-content: center;
   margin-top: 50px;
   margin-bottom: 50px;
   max-height: max-content;
+  z-index: 1;
   @media (max-width: 320px) {
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
     
     
   }
 
   @media (max-width: 768px) {
-  
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
     
   }
 
@@ -283,6 +306,7 @@ lord-icon {
   
   
   .container {
+    
     .row {   
       .title {
         
@@ -293,11 +317,13 @@ lord-icon {
         justify-content: flex-start;
         @media (max-width: 320px) {
           font-size: 25px;
+          text-align: center;
           
         }
 
         @media (max-width: 768px) {
           font-size: 25px;
+          text-align: center;
         }
 
         @media (min-width: 1024px) {
@@ -337,23 +363,30 @@ lord-icon {
     }
     
     .row {
-      .col-4.company{
+      .col-12.company {
         font-size: 20px;
         font-family: $Robotoitalic;
         color: whitesmoke;
         text-align: left;
-        .links{
-          text-decoration: none;
-          color: whitesmoke;
-          
-        }
+    
+        
+  
+          @media (min-width: 320px) and (max-width: 720px) {
+            font-size: 15px;
+            text-align: center;
+            justify-content: center;
+            
+          }
+        
       }
-      .col-8.description {
-        font-size: 20px;
-        font-family: $Roboto;
-        color: #fff;
-        text-align: right;
-      }
+    }
+    
+    
+    .col-8.description {
+      font-size: 20px;
+      font-family: $Roboto;
+      color: #fff;
+      text-align: right;
     }
     
   }
@@ -426,6 +459,7 @@ lord-icon {
 
 .container.education {
   backdrop-filter: blur(6px);
+  background: rgba(255, 255, 255, 0.2);
   margin-top: 100px;
   margin-bottom: 100px;
   max-width: 1200px;
@@ -437,6 +471,7 @@ lord-icon {
   .row {
     padding-bottom: 20px;
     padding-top: 20px;
+
   }
 
   .col-1{
@@ -512,38 +547,65 @@ lord-icon {
 
 //{---------------------Start of about.js--------------------- }
 
-
-.About-header{
-  color:#fff;
-  font-family: $Robotslabreg;
-}
-.container.skill-container{
-  width: 80%; /* Set the width to 80% of the parent container */
-  color:white;
+/* Common styles for .container.skill-container and .backdrop-filter-wrapper */
+/* Common styles for .container.skill-container and .backdrop-filter-wrapper */
+.container.skill-container {
+  width: 80%;
+  color: white;
   justify-content: center;
   backdrop-filter: blur(8px);
-  
   border: none;
-  
+
+  /* Other common container styles */
+
   .backdrop-filter-wrapper {
-    backdrop-filter: blur(8px); /* Standard syntax */
+    backdrop-filter: blur(8px);
     height: max-content;
     display: flex;
     padding: 40px;
     border: solid 2px whitesmoke;
-  
-  .col-6{
-    height: max-content;
-    
-    .user-image{
-      border-radius: 50%;
-      height:500px;
-      width: 500px;
-      border: solid 5px whitesmoke;
-    }    
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+
+    /* Other styles for .backdrop-filter-wrapper */
+
+    .col-6 {
+      height: max-content;
+      font-family: $Robotslabsemibold;
+      display: flex;
+      font-size: 50px;
+      flex-direction: column;
+      justify-content: center; /* Center items horizontally and vertically */
+      align-items: center;
+
+      .user-image {
+        border-radius: 50%;
+        max-width: 100%;
+        height: auto;
+        border: solid 5px whitesmoke;
+      }
+    }
+  }
+
+  /* Media query for screens below 720px */
+  @media (min-width: 320px) and (max-width: 720px) {
+    .backdrop-filter-wrapper {
+      flex-direction: column;
+      align-items: center; /* Center content vertically and horizontally */
+
+      .col-6 {
+        font-size: 25px;
+      }
+    }
   }
 }
+
+/* About header styles */
+.About-header {
+  color: #fff;
+  font-family: $Robotslabreg;
 }
+
 
 
 

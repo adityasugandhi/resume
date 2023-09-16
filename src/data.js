@@ -43,4 +43,23 @@ export const experienceData= [{
     items:[""]
   }
 ];
+
+export const parttimeData = [{
+  title: "Desk Assistant",
+    year: "May 2023 - Present",
+    links: "https://housing.fsu.edu/",
+    company:"University Housing,FSU Tallahassee, U.S.A,",
+    description: "",
+    items: [""]
+  
+},
+  {  title: "Student-Cashier  ",
+    year: "Aug 2022 - Sep 2023",
+    links: "https://www.pollotropical.com/",
+    company:"Pollo Tropical Student Union,FSU Tallahassee, U.S.A,",
+    description: "",
+    items: [""]
+}
+
+]
   
