@@ -33,7 +33,7 @@ export const experienceData= [{
     items: [""]
   },
   {
-    title:"Software Engineer",
+    title:"Software Engineer-Intern",
     year:'Dec 2019 – July 2020',
     company: "Impetus Indore, India",
     description:"",
