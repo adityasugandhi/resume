@@ -1,5 +1,6 @@
-import React, {useState} from "react";
+import React from "react";
 import userimage from '../Styles/user-image.jpeg'
+import { ReactAnimatoin } from "../Components/icon";
 //import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 //import "./App.css";
 //import Nav from "./Components/Nav";
@@ -13,6 +14,8 @@ export default function About() {
         <Projects
         userimage = {userimage}
         username = "Aditya Sugandhi"
+        description="Software Engineer with 3+ years of experience in full-stack development, distributed systems, AI modeling, and optimization algorithms. Seeking a challenging role in a fast-paced environment where I can use my skills and experience to make a significant impact."
+        technologies={['Node.js','Python','Java','C/C++']}
         />
         </div>
         );
