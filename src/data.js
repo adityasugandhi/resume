@@ -1,5 +1,5 @@
-import fsu from './Styles/logos/FSU_logo.png';
-import srm from './Styles/logos/Srmseal.png';
+import fsu from './assets/css/Styles/logos/FSU_logo.png';
+import srm from './assets/css/Styles/logos/Srmseal.png';
 
 export const educationData=[{
     university:"Florida State Univerisity, Tallahassee",

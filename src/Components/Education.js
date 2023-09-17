@@ -1,6 +1,6 @@
 import React,{useState} from "react";
-import "../Styles/style.scss"
-import { Containerfadein } from "../Styles/fadein";
+import "../assets/css/Styles/style.scss"
+import { Containerfadein } from "../assets/css/Styles/fadein";
 
 
 export default function Education (props){

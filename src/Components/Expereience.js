@@ -1,5 +1,5 @@
 import React, { useState} from 'react';
-import {Containerfadein} from '../Styles/fadein'
+import {Containerfadein} from '../assets/css/Styles/fadein'
 import styled, { keyframes } from 'styled-components';
 
 export const fadeIn = keyframes`

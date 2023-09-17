@@ -1,7 +1,7 @@
 import React from "react";
 import Experience from "../Components/Expereience";
 import WorkHistoryIcon from '@mui/icons-material/WorkHistory';
-import "../Styles/style.scss"
+import "../assets/css/Styles/style.scss"
 import styled from 'styled-components';
 import {experienceData,parttimeData}from '../data';
 

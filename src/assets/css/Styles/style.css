@@ -1,0 +1,163 @@
+/* Font-face declarations for custom fonts */
+@font-face {
+  font-family: Caluna, sans-serif;
+  src: url("./Font-family/calluna-regular.otf") format("opentype");
+  /* Add more font formats (e.g., woff, woff2, ttf) if needed */
+}
+@font-face {
+  font-family: Roboto, sans-serif;
+  src: url("./Font-family/Roboto/Roboto-Black.ttf") format("truetype");
+  /* You can specify additional font formats if needed */
+}
+.Education h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 50px;
+  text-align: center;
+  color: #fff;
+}
+.Education .school-icon {
+  font-size: 50;
+}
+
+.Experience h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 50px;
+  text-align: center;
+  color: #fff;
+}
+.Experience WorkIcon {
+  font-size: 50px;
+}
+
+.template {
+  border: 1px solid white;
+  backdrop-filter: blur(5px);
+  margin: 50px;
+  margin-left: -10px;
+  margin-right: -10px;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+  color: white;
+  transition: color 2s ease-in-out;
+  /* Styles for title */
+  /* Styles for timeline */
+  /* Styles for description */
+}
+.template .title {
+  font-family: "Roboto", sans-serif;
+  font-size: 45px;
+  text-align: left;
+  color: #fff;
+}
+.template .timeline {
+  font-family: "Roboto", sans-serif;
+  font-size: 25px;
+  text-align: right;
+  color: #fff;
+}
+.template .description {
+  font-family: "Roboto", sans-serif;
+  font-size: 25px;
+  text-align: right;
+  color: #fff;
+  align-items: left;
+}
+.template.expanded {
+  color: 0;
+}
+.template:focus {
+  color: brown;
+}
+
+.Job-main {
+  font-family: Roboto;
+  font-size: 50px;
+  text-align: center;
+  align-items: center;
+}
+
+.icons {
+  align-items: center;
+  display: "flex";
+  justify-content: center;
+}
+
+.vanta {
+  min-height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+/* Rest of your SCSS styles */
+.content {
+  /* Styles for your content */
+  position: relative; /* Ensure the content is positioned relative */
+  z-index: 1; /* Place the content on top of the background */
+}
+
+/* styles.css (or .scss) */
+/* Your other CSS styles and components can use 'Caluna' as the font-family now */
+.title {
+  font-family: Roboto;
+  font-size: 50px;
+  text-align: left;
+  color: #fff;
+}
+
+.timeline {
+  font-family: "Roboto", sans-serif;
+  font-size: 50px;
+  text-align: right;
+  color: #fff;
+}
+
+.description {
+  font-family: "Roboto", sans-serif;
+  font-size: 25px;
+  text-align: right;
+  color: #fff;
+  align-items: left;
+}
+
+.name_main {
+  margin: 0 auto;
+  font-size: 50px;
+  text-align: center;
+  align-items: center;
+}
+
+.Work-Experience {
+  margin: 0 auto;
+  font-size: 50px;
+  font-family: Roboto;
+  text-align: center;
+  color: #fff;
+}
+
+@media (min-width: 320px) {
+  .name_main {
+    margin: 0 auto;
+  }
+}
+@media (min-width: 768px) {
+  .name_main {
+    margin: 0 auto;
+    font-family: Roboto;
+  }
+}
+@media (min-width: 1024px) {
+  .name_main {
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1200px) {
+  .name_main {
+    margin: 0 auto;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

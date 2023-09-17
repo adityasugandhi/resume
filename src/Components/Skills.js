@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { Containerfadein } from "../Styles/fadein";
+import { Containerfadein } from "../assets/css/Styles/fadein";
 
 export default function Projects(props) {
   useEffect(() => {

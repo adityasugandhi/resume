@@ -1,7 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 //import { Home } from '@mui/icons-material';
-import "../Styles/style.scss"
+import "../assets/css/Styles/style.scss"
 export default function Nav() {
     const Home = 
         <lord-icon
@@ -49,7 +49,7 @@ export default function Nav() {
                 <ul>
                     <Link to='/worker'>{Computer}</Link>        
                     <Link onClick={openEmailClient}>{Email}</Link>
-                    <Link to='/'>{Home}</Link>    
+                    <Link to='/resume'>{Home}</Link>    
                     <Link to='/education'>{Education}</Link>
                     <Link to ='/about' >{Contact}</Link>
                 </ul>

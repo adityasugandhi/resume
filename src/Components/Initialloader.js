@@ -2,7 +2,7 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.css";
 import { Link } from "react-router-dom";
 import {github,ide,LinkedIn,avatar} from './icon'
-import { Containerfadein } from "../Styles/fadein";
+import { Containerfadein } from "../assets/css/Styles/fadein";
 // Define the custom element 'avatar' using defineElement
 
 
