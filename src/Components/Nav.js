@@ -47,11 +47,11 @@ export default function Nav() {
         <header className="Nav-header">
        
                 <ul>
-                    <Link to='/worker'>{Computer}</Link>        
+                    <Link to='/resume/worker'>{Computer}</Link>        
                     <Link onClick={openEmailClient}>{Email}</Link>
                     <Link to='/resume'>{Home}</Link>    
-                    <Link to='/education'>{Education}</Link>
-                    <Link to ='/about' >{Contact}</Link>
+                    <Link to='/resume/education'>{Education}</Link>
+                    <Link to ='/resume/about' >{Contact}</Link>
                 </ul>
         </header>
         </div>
