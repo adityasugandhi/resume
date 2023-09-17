@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/resume/home/static/css/main.d3c7e792.css",
-    "main.js": "/resume/home/static/js/main.c316ca45.js",
-    "static/media/user-image.jpeg": "/resume/home/static/media/user-image.14656cf9166dba536208.jpeg",
-    "static/media/FSU_logo.png": "/resume/home/static/media/FSU_logo.28db7e9b0211cd520a33.png",
-    "static/media/Roboto-BoldItalic.ttf": "/resume/home/static/media/Roboto-BoldItalic.87d61cea6fe1d235d4a8.ttf",
-    "static/media/Roboto-Black.ttf": "/resume/home/static/media/Roboto-Black.cf56c1b149d0a5e8d7c6.ttf",
-    "static/media/RobotoSlab-SemiBold.ttf": "/resume/home/static/media/RobotoSlab-SemiBold.119b7a42ae7091270b61.ttf",
-    "static/media/RobotoSlab-Regular.ttf": "/resume/home/static/media/RobotoSlab-Regular.a699ec33d3b46442674d.ttf",
-    "static/media/calluna-regular.otf": "/resume/home/static/media/calluna-regular.09ff970aeb23255b532d.otf",
-    "static/media/Srmseal.png": "/resume/home/static/media/Srmseal.ddb598e30f7dde2e8b3d.png",
-    "static/media/Quicksand-Regular.ttf": "/resume/home/static/media/Quicksand-Regular.67e7ce07307c681fb49d.ttf",
-    "index.html": "/resume/home/index.html",
-    "main.d3c7e792.css.map": "/resume/home/static/css/main.d3c7e792.css.map",
-    "main.c316ca45.js.map": "/resume/home/static/js/main.c316ca45.js.map"
+    "main.css": "/resume/static/css/main.7044ecc6.css",
+    "main.js": "/resume/static/js/main.5262d209.js",
+    "static/media/user-image.jpeg": "/resume/static/media/user-image.14656cf9166dba536208.jpeg",
+    "static/media/FSU_logo.png": "/resume/static/media/FSU_logo.28db7e9b0211cd520a33.png",
+    "static/media/Roboto-BoldItalic.ttf": "/resume/static/media/Roboto-BoldItalic.87d61cea6fe1d235d4a8.ttf",
+    "static/media/Roboto-Black.ttf": "/resume/static/media/Roboto-Black.cf56c1b149d0a5e8d7c6.ttf",
+    "static/media/RobotoSlab-SemiBold.ttf": "/resume/static/media/RobotoSlab-SemiBold.119b7a42ae7091270b61.ttf",
+    "static/media/RobotoSlab-Regular.ttf": "/resume/static/media/RobotoSlab-Regular.a699ec33d3b46442674d.ttf",
+    "static/media/calluna-regular.otf": "/resume/static/media/calluna-regular.09ff970aeb23255b532d.otf",
+    "static/media/Srmseal.png": "/resume/static/media/Srmseal.ddb598e30f7dde2e8b3d.png",
+    "static/media/Quicksand-Regular.ttf": "/resume/static/media/Quicksand-Regular.67e7ce07307c681fb49d.ttf",
+    "index.html": "/resume/index.html",
+    "main.7044ecc6.css.map": "/resume/static/css/main.7044ecc6.css.map",
+    "main.5262d209.js.map": "/resume/static/js/main.5262d209.js.map"
   },
   "entrypoints": [
-    "static/css/main.d3c7e792.css",
-    "static/js/main.c316ca45.js"
+    "static/css/main.7044ecc6.css",
+    "static/js/main.5262d209.js"
   ]
 }
