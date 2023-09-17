@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import { Containerfadein } from "../Styles/fadein";
-import reactanime from '../Styles/LottieAnimation/animation_lmnpr8uv.json';
 
 export default function Projects(props) {
   useEffect(() => {
@@ -80,7 +79,7 @@ export default function Projects(props) {
           </div>
           <div className="col-6">
             {props.username}
-            <div className="col-12">
+            <div className="container-fluid col-12">
               {props.description}
               {/* Technologies */}
               <p>I specialize in</p>

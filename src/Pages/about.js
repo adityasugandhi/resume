@@ -1,6 +1,5 @@
 import React from "react";
 import userimage from '../Styles/user-image.jpeg'
-import { ReactAnimatoin } from "../Components/icon";
 //import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 //import "./App.css";
 //import Nav from "./Components/Nav";

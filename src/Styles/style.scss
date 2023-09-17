@@ -613,24 +613,24 @@ lord-icon {
   @media (min-width: 320px) and (max-width: 720px) {
     .backdrop-filter-wrapper {
       flex-direction: column;
-      padding: 1; /* Center content vertically and horizontally */
+      padding: 5px; /* Center content vertically and horizontally */
 
       .col-6 {
         font-size: 25px;
         padding-left: 0px;
         padding-right: 0px;
-        text-align: left;
-      }
+        text-align: center;
+      
       .col-12{
-        font-size: medium;
+        font-size:small !important;
         right: 0;
         left: 0;
         height: 100%;
         width: 100%;
-        padding: 0;
-        margin:-30px;
+        padding-top: 30px !important;
         text-align: left;
       }
+    }
     }
   }
 }

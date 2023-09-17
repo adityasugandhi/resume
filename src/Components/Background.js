@@ -17,7 +17,7 @@ const ExampleApp = (props) => {
           minWidth: 200.00,  
            scale: 1.00,   
           scaleMobile: 1.00,   
-          color: 0xffffff,   
+          color: 0xc822c8,   
           backgroundColor: 0x0,   
           points: 10.00,   
           maxDistance: 21.00,
