@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import {Routes, Route, HashRouter } from 'react-router-dom';
 import './App.css';
 import Nav from './Components/Nav';
 import WorkExp from './Pages/Worker';
@@ -12,20 +12,20 @@ import Abouted from './Pages/info';
 function App() {
   console.log.apply(window.location)
   return (
-    <BrowserRouter>
+    <HashRouter>
       <div className="App">
         <header className="App-header">
           <Nav />
           <Routes>
-            <Route path="/resume" element={<Home/>} />
-            <Route path="/resume/worker" element={<WorkExp/>} />
-            <Route path="/resume/education" element={<Education/>}/>
-            <Route path  ="/resume/about" element={<Abouted/>}/>
+            <Route path="/" element={<Home/>} />
+            <Route path="/worker" element={<WorkExp/>} />
+            <Route path="/education" element={<Education/>}/>
+            <Route path  ="/about" element={<Abouted/>}/>
           </Routes>
         </header>
         <ExampleApp/>
       </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 

@@ -79,7 +79,7 @@ export default function Projects(props) {
           </div>
           <div className="col-6">
             {props.username}
-            <div className="container-fluid col-12">
+            <div className="col-12">
               {props.description}
               {/* Technologies */}
               <p>I specialize in</p>
