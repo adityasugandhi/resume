@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/resume/static/css/main.5df6797f.css",
+    "main.css": "/resume/static/css/main.f94f624e.css",
     "main.js": "/resume/static/js/main.b36b6f17.js",
     "static/media/user-image.jpeg": "/resume/static/media/user-image.04d42bb442b4df1fba2e.jpeg",
     "static/media/FSU_logo.png": "/resume/static/media/FSU_logo.28db7e9b0211cd520a33.png",
@@ -12,11 +12,11 @@
     "static/media/Srmseal.png": "/resume/static/media/Srmseal.ddb598e30f7dde2e8b3d.png",
     "static/media/Quicksand-Regular.ttf": "/resume/static/media/Quicksand-Regular.67e7ce07307c681fb49d.ttf",
     "index.html": "/resume/index.html",
-    "main.5df6797f.css.map": "/resume/static/css/main.5df6797f.css.map",
+    "main.f94f624e.css.map": "/resume/static/css/main.f94f624e.css.map",
     "main.b36b6f17.js.map": "/resume/static/js/main.b36b6f17.js.map"
   },
   "entrypoints": [
-    "static/css/main.5df6797f.css",
+    "static/css/main.f94f624e.css",
     "static/js/main.b36b6f17.js"
   ]
 }
